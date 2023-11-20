@@ -173,3 +173,231 @@ INFO - 2023-11-20 03:20:27 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-11-20 03:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-20 03:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-20 03:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-20 13:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-20 13:38:27 --> Error connecting to the database: ErrorException: Packets out of order. Expected 0 received 1. Packet size=74 in C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Packets out of ...', 'C:\\laragon\\www\\...', 185)
+#1 C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('www.hermesjunio...', 'c2adsgrupo01', 'mysqladsgrupo01', 'c2adsgrupo01', 3306, '', 0)
+#2 C:\laragon\www\UniReport\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\laragon\www\UniReport\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\laragon\www\UniReport\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#5 C:\laragon\www\UniReport\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#6 C:\laragon\www\UniReport\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#7 C:\laragon\www\UniReport\app\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+#8 C:\laragon\www\UniReport\system\CodeIgniter.php(942): App\Controllers\AdminController->index()
+#9 C:\laragon\www\UniReport\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\UniReport\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\UniReport\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\UniReport\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('www.hermesjunio...', 'c2adsgrupo01', 'mysqladsgrupo01', 'c2adsgrupo01', 3306, '', 0)
+#1 C:\laragon\www\UniReport\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\UniReport\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\UniReport\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\UniReport\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\UniReport\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\UniReport\app\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+#7 C:\laragon\www\UniReport\system\CodeIgniter.php(942): App\Controllers\AdminController->index()
+#8 C:\laragon\www\UniReport\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\UniReport\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\UniReport\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\UniReport\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\UniReport\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\UniReport\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\UniReport\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\laragon\www\UniReport\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\laragon\www\UniReport\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 C:\laragon\www\UniReport\app\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+#6 C:\laragon\www\UniReport\system\CodeIgniter.php(942): App\Controllers\AdminController->index()
+#7 C:\laragon\www\UniReport\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 C:\laragon\www\UniReport\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\UniReport\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\UniReport\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-11-20 13:38:27 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `relatorio_erros`', [], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+ERROR - 2023-11-20 13:41:06 --> Error connecting to the database: ErrorException: Packets out of order. Expected 0 received 1. Packet size=74 in C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Packets out of ...', 'C:\\laragon\\www\\...', 185)
+#1 C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('138.68.5.9', 'c2adsgrupo01', 'mysqladsgrupo01', 'c2adsgrupo01', 3306, '', 0)
+#2 C:\laragon\www\UniReport\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\laragon\www\UniReport\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\laragon\www\UniReport\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#5 C:\laragon\www\UniReport\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#6 C:\laragon\www\UniReport\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#7 C:\laragon\www\UniReport\app\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+#8 C:\laragon\www\UniReport\system\CodeIgniter.php(942): App\Controllers\AdminController->index()
+#9 C:\laragon\www\UniReport\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\UniReport\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\UniReport\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\UniReport\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('138.68.5.9', 'c2adsgrupo01', 'mysqladsgrupo01', 'c2adsgrupo01', 3306, '', 0)
+#1 C:\laragon\www\UniReport\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\UniReport\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\UniReport\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\UniReport\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\UniReport\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\UniReport\app\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+#7 C:\laragon\www\UniReport\system\CodeIgniter.php(942): App\Controllers\AdminController->index()
+#8 C:\laragon\www\UniReport\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\UniReport\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\UniReport\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\UniReport\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\UniReport\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\UniReport\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\UniReport\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\laragon\www\UniReport\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\laragon\www\UniReport\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 C:\laragon\www\UniReport\app\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+#6 C:\laragon\www\UniReport\system\CodeIgniter.php(942): App\Controllers\AdminController->index()
+#7 C:\laragon\www\UniReport\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 C:\laragon\www\UniReport\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\UniReport\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\UniReport\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-11-20 13:41:06 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `relatorio_erros`', [], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+ERROR - 2023-11-20 13:41:08 --> Error connecting to the database: ErrorException: Packets out of order. Expected 0 received 1. Packet size=74 in C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Packets out of ...', 'C:\\laragon\\www\\...', 185)
+#1 C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('138.68.5.9', 'c2adsgrupo01', 'mysqladsgrupo01', 'c2adsgrupo01', 3306, '', 0)
+#2 C:\laragon\www\UniReport\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\laragon\www\UniReport\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\laragon\www\UniReport\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#5 C:\laragon\www\UniReport\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#6 C:\laragon\www\UniReport\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#7 C:\laragon\www\UniReport\app\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+#8 C:\laragon\www\UniReport\system\CodeIgniter.php(942): App\Controllers\AdminController->index()
+#9 C:\laragon\www\UniReport\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\UniReport\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\UniReport\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\UniReport\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('138.68.5.9', 'c2adsgrupo01', 'mysqladsgrupo01', 'c2adsgrupo01', 3306, '', 0)
+#1 C:\laragon\www\UniReport\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\UniReport\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\UniReport\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\UniReport\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\UniReport\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\UniReport\app\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+#7 C:\laragon\www\UniReport\system\CodeIgniter.php(942): App\Controllers\AdminController->index()
+#8 C:\laragon\www\UniReport\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\UniReport\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\UniReport\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\UniReport\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\UniReport\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\UniReport\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\UniReport\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\laragon\www\UniReport\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\laragon\www\UniReport\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 C:\laragon\www\UniReport\app\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+#6 C:\laragon\www\UniReport\system\CodeIgniter.php(942): App\Controllers\AdminController->index()
+#7 C:\laragon\www\UniReport\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 C:\laragon\www\UniReport\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\UniReport\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\UniReport\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-11-20 13:41:08 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `relatorio_erros`', [], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+ERROR - 2023-11-20 13:46:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'c2adsgrupo01'@'localhost' (using password: YES) in C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'c2adsgrupo01', 'mysqladsgrupo01', 'c2adsgrupo01', 3306, '', 0)
+#1 C:\laragon\www\UniReport\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\UniReport\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\UniReport\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\UniReport\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\UniReport\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\UniReport\app\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+#7 C:\laragon\www\UniReport\system\CodeIgniter.php(942): App\Controllers\AdminController->index()
+#8 C:\laragon\www\UniReport\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\UniReport\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\UniReport\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\UniReport\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon\www\UniReport\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\UniReport\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\UniReport\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\UniReport\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\laragon\www\UniReport\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\laragon\www\UniReport\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 C:\laragon\www\UniReport\app\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+#6 C:\laragon\www\UniReport\system\CodeIgniter.php(942): App\Controllers\AdminController->index()
+#7 C:\laragon\www\UniReport\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 C:\laragon\www\UniReport\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\UniReport\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\UniReport\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-11-20 13:46:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `relatorio_erros`', [], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\AdminController.php(14): CodeIgniter\BaseModel->paginate(5)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
