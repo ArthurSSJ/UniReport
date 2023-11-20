@@ -12,7 +12,7 @@ class Home extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = false;
-    protected $allowedFields    = ['mensagem', 'arquivo_media'];
+    protected $allowedFields    = ['sala', 'mensagem', 'arquivo_media', 'resolvido'];
 
     // Dates
     protected $useTimestamps = false;

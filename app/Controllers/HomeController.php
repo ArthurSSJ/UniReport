@@ -15,9 +15,6 @@ class HomeController extends BaseController
         
         $reports = new Home();
         $report = $reports->findAll();
-        echo "<pre>";
-        print_r($report);
-        echo "</pre>";
 
         echo view('common/header', $data);
         echo view('home');

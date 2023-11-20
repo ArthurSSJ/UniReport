@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title ?? 'UniReport'; ?></title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4a37dd3233.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -15,7 +16,7 @@
 
         <nav class="flex gap-6 min-w-max justify-self-center">
             <a href="<?= url_to('home'); ?>" class="">Início</a>
-            <a href="<?= url_to('admin'); ?>" class="">Outras áreas</a>
+            <a href="<?= url_to('admin'); ?>" class="">Admin</a>
         </nav>
 
         <a href="" class="py-2 px-4 bg-blue-900 rounded-lg justify-self-end">login</a>

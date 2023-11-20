@@ -1,0 +1,175 @@
+CRITICAL - 2023-11-20 02:06:16 --> Undefined variable $data
+in APPPATH\Views\admin.php on line 28.
+ 1 APPPATH\Views\admin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\UniReport\\app\\Views\\admin.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\UniReport\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\AdminController.php(22): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+CRITICAL - 2023-11-20 02:06:40 --> Undefined variable $data
+in APPPATH\Views\admin.php on line 28.
+ 1 APPPATH\Views\admin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\UniReport\\app\\Views\\admin.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\UniReport\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\AdminController.php(22): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+CRITICAL - 2023-11-20 02:06:42 --> Undefined variable $data
+in APPPATH\Views\admin.php on line 28.
+ 1 APPPATH\Views\admin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\UniReport\\app\\Views\\admin.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\UniReport\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\AdminController.php(22): view('admin')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+CRITICAL - 2023-11-20 02:07:06 --> Undefined variable $data
+in APPPATH\Views\admin.php on line 28.
+ 1 APPPATH\Views\admin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\UniReport\\app\\Views\\admin.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\UniReport\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\AdminController.php(22): view('admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+CRITICAL - 2023-11-20 02:07:07 --> Undefined variable $data
+in APPPATH\Views\admin.php on line 28.
+ 1 APPPATH\Views\admin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\UniReport\\app\\Views\\admin.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\UniReport\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\AdminController.php(22): view('admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+CRITICAL - 2023-11-20 02:07:09 --> Undefined variable $data
+in APPPATH\Views\admin.php on line 28.
+ 1 APPPATH\Views\admin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\UniReport\\app\\Views\\admin.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\UniReport\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\AdminController.php(22): view('admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+CRITICAL - 2023-11-20 02:07:32 --> Undefined variable $report
+in APPPATH\Views\admin.php on line 28.
+ 1 APPPATH\Views\admin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $report', 'C:\\laragon\\www\\UniReport\\app\\Views\\admin.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\UniReport\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\AdminController.php(22): view('admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+CRITICAL - 2023-11-20 02:07:32 --> Undefined variable $report
+in APPPATH\Views\admin.php on line 28.
+ 1 APPPATH\Views\admin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $report', 'C:\\laragon\\www\\UniReport\\app\\Views\\admin.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\UniReport\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\AdminController.php(22): view('admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+CRITICAL - 2023-11-20 02:18:13 --> Undefined array key "mensagem"
+in APPPATH\Views\admin.php on line 29.
+ 1 APPPATH\Views\admin.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mensagem"', 'C:\\laragon\\www\\UniReport\\app\\Views\\admin.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\UniReport\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\AdminController.php(21): view('admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+CRITICAL - 2023-11-20 02:21:56 --> Undefined array key "pager"
+in APPPATH\Controllers\AdminController.php on line 21.
+ 1 APPPATH\Controllers\AdminController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pager"', 'C:\\laragon\\www\\UniReport\\app\\Controllers\\AdminController.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+CRITICAL - 2023-11-20 02:22:14 --> Cannot use object of type App\Models\Home as array
+in APPPATH\Controllers\AdminController.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+CRITICAL - 2023-11-20 02:24:03 --> Cannot use object of type CodeIgniter\Pager\Pager as array
+in APPPATH\Views\admin.php on line 43.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin', [], true)
+ 4 APPPATH\Controllers\AdminController.php(21): view('admin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+CRITICAL - 2023-11-20 02:56:00 --> Undefined array key "id"
+in APPPATH\Views\admin.php on line 39.
+ 1 APPPATH\Views\admin.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\UniReport\\app\\Views\\admin.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\UniReport\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\AdminController.php(21): view('admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+CRITICAL - 2023-11-20 02:56:36 --> Undefined array key "id"
+in APPPATH\Views\admin.php on line 39.
+ 1 APPPATH\Views\admin.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\UniReport\\app\\Views\\admin.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\UniReport\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\AdminController.php(21): view('admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+CRITICAL - 2023-11-20 02:56:37 --> Undefined array key "id"
+in APPPATH\Views\admin.php on line 39.
+ 1 APPPATH\Views\admin.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\UniReport\\app\\Views\\admin.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\UniReport\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\AdminController.php(21): view('admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\UniReport\\public\\index.php')
+INFO - 2023-11-20 03:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-20 03:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-20 03:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-20 03:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-20 03:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
