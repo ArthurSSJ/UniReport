@@ -12,9 +12,6 @@ class HomeController extends BaseController
         $data = [
             'title' => 'UniReport - Início'
         ];
-        
-        $reports = new Home();
-        $report = $reports->findAll();
 
         echo view('common/header', $data);
         echo view('home');
@@ -27,16 +24,6 @@ class HomeController extends BaseController
 
     public function insert()
     {      
-        $validated = $this->validate([
-            'mensagem' => 'required'
-        ], [
-            'mensagem' => [
-                'required' => 'Este campo é obrigatório'
-            ]
-        ]);
-        if (!$validated) {
-            return redirect()->route('home');
-        }
 
         $insert = (new Home())->insert([
             'mensagem' => strip_tags((string)$this->request->getPost('mensagem')),
@@ -44,7 +31,7 @@ class HomeController extends BaseController
         ]);
 
         if ($insert) {
-            return redirect()->route('home');
+            return redirect()->route('home')->with("Problema reportado com sucesso");
         }else {
             var_dump('nao cadastrou');
             die;

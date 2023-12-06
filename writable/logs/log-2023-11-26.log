@@ -1,0 +1,269 @@
+ERROR - 2023-11-26 22:18:14 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/var/www/client...', 185, Array)
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('https://hermesj...', 'c2adsgrupo01', 'mysqladsgrupo01', 'c2adsgrupo01', 3306, '', 0)
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#7 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Controllers/HomeController.php(17): CodeIgniter\BaseModel->findAll()
+#8 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(942): App\Controllers\HomeController->index()
+#9 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#10 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('https://hermesj...', 'c2adsgrupo01', 'mysqladsgrupo01', 'c2adsgrupo01', 3306, '', 0)
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Controllers/HomeController.php(17): CodeIgniter\BaseModel->findAll()
+#7 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(942): App\Controllers\HomeController->index()
+#8 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Controllers/HomeController.php(17): CodeIgniter\BaseModel->findAll()
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(942): App\Controllers\HomeController->index()
+#7 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#8 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-26 22:18:14 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Name or service not known
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `relatorio_erros`', [], false)
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/HomeController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-26 22:18:20 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/var/www/client...', 185, Array)
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('http://hermesju...', 'c2adsgrupo01', 'mysqladsgrupo01', 'c2adsgrupo01', 3306, '', 0)
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#7 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Controllers/HomeController.php(17): CodeIgniter\BaseModel->findAll()
+#8 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(942): App\Controllers\HomeController->index()
+#9 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#10 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('http://hermesju...', 'c2adsgrupo01', 'mysqladsgrupo01', 'c2adsgrupo01', 3306, '', 0)
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Controllers/HomeController.php(17): CodeIgniter\BaseModel->findAll()
+#7 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(942): App\Controllers\HomeController->index()
+#8 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Controllers/HomeController.php(17): CodeIgniter\BaseModel->findAll()
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(942): App\Controllers\HomeController->index()
+#7 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#8 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-26 22:18:20 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Name or service not known
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `relatorio_erros`', [], false)
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/HomeController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-26 22:18:27 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/var/www/client...', 185, Array)
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('http://hermesju...', 'c2adsgrupo01', 'mysqladsgrupo01', 'c2adsgrupo01', 3306, '', 0)
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#7 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Controllers/HomeController.php(17): CodeIgniter\BaseModel->findAll()
+#8 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(942): App\Controllers\HomeController->index()
+#9 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#10 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('http://hermesju...', 'c2adsgrupo01', 'mysqladsgrupo01', 'c2adsgrupo01', 3306, '', 0)
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Controllers/HomeController.php(17): CodeIgniter\BaseModel->findAll()
+#7 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(942): App\Controllers\HomeController->index()
+#8 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Controllers/HomeController.php(17): CodeIgniter\BaseModel->findAll()
+#6 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(942): App\Controllers\HomeController->index()
+#7 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#8 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-26 22:18:27 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Name or service not known
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `relatorio_erros`', [], false)
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/HomeController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 22:29:12 --> syntax error, unexpected 'exit' (T_EXIT)
+in APPPATH/Controllers/HomeController.php on line 31.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Controllers/HomeController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 22:31:53 --> The route for "home.insert" cannot be found.
+in SYSTEMPATH/Helpers/url_helper.php on line 489.
+ 1 SYSTEMPATH/Helpers/url_helper.php(489): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('home.insert')
+ 2 APPPATH/Views/home.php(7): url_to('home.insert')
+ 3 SYSTEMPATH/View/View.php(228): include('/var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Views/home.php')
+ 4 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('home', [], true)
+ 6 APPPATH/Controllers/HomeController.php(20): view('home')
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 22:53:29 --> The route for "HomeController.insert" cannot be found.
+in SYSTEMPATH/Helpers/url_helper.php on line 489.
+ 1 SYSTEMPATH/Helpers/url_helper.php(489): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('HomeController.insert')
+ 2 APPPATH/Views/home.php(7): url_to('HomeController.insert')
+ 3 SYSTEMPATH/View/View.php(228): include('/var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Views/home.php')
+ 4 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('home', [], true)
+ 6 APPPATH/Controllers/HomeController.php(20): view('home')
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 22:53:43 --> The route for "" cannot be found.
+in SYSTEMPATH/Helpers/url_helper.php on line 489.
+ 1 SYSTEMPATH/Helpers/url_helper.php(489): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('')
+ 2 APPPATH/Views/home.php(7): url_to('')
+ 3 SYSTEMPATH/View/View.php(228): include('/var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Views/home.php')
+ 4 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('home', [], true)
+ 6 APPPATH/Controllers/HomeController.php(20): view('home')
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 22:53:54 --> The route for "HomeController.insert" cannot be found.
+in SYSTEMPATH/Helpers/url_helper.php on line 489.
+ 1 SYSTEMPATH/Helpers/url_helper.php(489): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('HomeController.insert')
+ 2 APPPATH/Views/home.php(7): url_to('HomeController.insert')
+ 3 SYSTEMPATH/View/View.php(228): include('/var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Views/home.php')
+ 4 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('home', [], true)
+ 6 APPPATH/Controllers/HomeController.php(20): view('home')
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 22:54:02 --> The route for "HomeController/insert" cannot be found.
+in SYSTEMPATH/Helpers/url_helper.php on line 489.
+ 1 SYSTEMPATH/Helpers/url_helper.php(489): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('HomeController/insert')
+ 2 APPPATH/Views/home.php(7): url_to('HomeController/insert')
+ 3 SYSTEMPATH/View/View.php(228): include('/var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Views/home.php')
+ 4 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('home', [], true)
+ 6 APPPATH/Controllers/HomeController.php(20): view('home')
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 23:37:22 --> Call to undefined function form_open()
+in APPPATH/Views/insert_form.php on line 11.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('insert_form', [], true)
+ 4 APPPATH/Controllers/ProductController.php(10): view('insert_form')
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->insertForm()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 23:46:13 --> Undefined variable: data
+in APPPATH/Controllers/ProductController.php on line 11.
+ 1 APPPATH/Controllers/ProductController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', '/var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Controllers/ProductController.php', 11, [])
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->insertForm()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 23:58:48 --> Undefined variable: data
+in APPPATH/Views/home.php on line 4.
+ 1 APPPATH/Views/home.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', '/var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Views/home.php', 4, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/clients/client2/web2/web/sistema/adsgrupo01/UniReport/app/Views/home.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH/Controllers/HomeController.php(17): view('home')
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

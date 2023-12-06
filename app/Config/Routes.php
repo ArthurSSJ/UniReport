@@ -6,7 +6,8 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'HomeController::index', ['as' => 'home']);
-$routes->post('/', 'HomeController::insert', ['as' => 'Home.insert']);
+$routes->post('/', 'HomeController::index', ['as' => 'home.insert']);
+
 $routes->get('/admin', 'AdminController::index', ['as' => 'admin']);
-// Rota para excluir um relatório (utilize POST para a exclusão)
-$routes->get('/admin/delete/(:num)', 'AdminController::delete/$1', ['as' => 'admin_delete']);
+$routes->post('/admin/delete/(:num)', 'AdminController::delete/$1', ['as' => 'admin_delete']);
+

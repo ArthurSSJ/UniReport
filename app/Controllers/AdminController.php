@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\Admin;
 use App\Models\Home;
 
 class AdminController extends BaseController
@@ -17,7 +16,7 @@ class AdminController extends BaseController
             'title' => 'UniReport - Início'
         ];
 
-        echo view('common/header', $data);
+
         echo view('admin', ['report' => $report, 'pager' => $reports->pager]);
         echo view('common/footer');
     }

@@ -22,6 +22,7 @@ use CodeIgniter\Config\AutoloadConfig;
  */
 class Autoload extends AutoloadConfig
 {
+
     /**
      * -------------------------------------------------------------------
      * Namespaces
@@ -98,5 +99,5 @@ class Autoload extends AutoloadConfig
      * @var string[]
      * @phpstan-var list<string>
      */
-    public $helpers = [];
+    public $helpers = ['form', 'url', 'other_helpers'];
 }
